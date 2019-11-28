@@ -1,0 +1,357 @@
+@import url("https://fonts.googleapis.com/css?family=Lexend+Deca&display=swap");
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-family: "Lexend Deca", sans-serif;
+}
+
+header {
+	height: 120vh;
+	padding: 5vh 5vh;
+	background-image: url(./images/background_header.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: top right;
+}
+
+header h1 {
+	font-size: 6vh;
+	width: 40%;
+	color: #2b9dff;
+	vertical-align: middle;
+}
+
+.header-nav {
+	height: 30vh;
+	text-align: left;
+	vertical-align: middle;
+}
+
+nav a img {
+	vertical-align: middle;
+	float: right;
+}
+
+.header-nav .logo-title-side-text {
+	font-size: 2.5vh;
+	font-weight: 300;
+	text-align: center;
+	margin-left: 10px;
+	padding: 5px 20px;
+	background-color: #2b9dff;
+	border-radius: 1000px;
+	color: white;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+.header-nav a {
+	font-weight: 800;
+	font-size: 4vh;
+	vertical-align: middle;
+}
+
+.header-button {
+	text-align: center;
+	line-height: 50px;
+	display: block;
+	width: 175px;
+	height: 53px;
+	border-radius: 5px;
+	margin-top: 30px;
+	border: solid 2px #2b9dff;
+	color: #2b9dff;
+}
+
+.header-button:hover {
+	border: solid 2px rgb(118, 191, 255);
+	color: white;
+	background-color: rgb(118, 191, 255);
+}
+
+.team-members-area {
+	display: inline-block;
+	height: 80vh;
+	background-image: url(./images/background_team.png);
+	background-repeat: no-repeat;
+	background-position: 55% 310%;
+	vertical-align: middle;
+}
+
+.team-headline {
+	padding-top: 10vh;
+	margin: 0 25% 30px 25%;
+	height: auto;
+	color: #2b9dff;
+	text-align: center;
+	font-size: 3.5vh;
+}
+
+.team-members-container {
+	padding-bottom: 10vh;
+	margin-top: 50px;
+	margin-left: 25%;
+	text-align: center;
+	width: 50%;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.member-1 {
+	float: left;
+	width: calc(100% / 3);
+}
+
+.member-2 {
+	float: left;
+	width: calc(100% / 3);
+}
+
+.member-3 {
+	float: left;
+	width: calc(100% / 3);
+}
+
+.about-container {
+	height: 100vh;
+	background-image: url(./images/background_about.png);
+	background-repeat: no-repeat;
+	background-position: left center;
+}
+
+.about-headline {
+	padding-top: 30vh;
+	padding-right: 5vh;
+}
+
+.about-headline,
+.about-icon-container {
+	margin-left: 60%;
+	text-align: left;
+	color: #2b9dff;
+	font-size: 3.5vh;
+}
+
+.about-icon-container img {
+	text-align: left;
+	margin-right: 15px;
+	margin-top: 30px;
+}
+
+.call-to-action {
+	padding-top: 20vh;
+	text-align: center;
+	height: 50vh;
+	margin: 20vh;
+	background-image: url(./images/background_calltoaction.png);
+	background-repeat: no-repeat;
+	background-size: 80%;
+	background-position: 20% 0%;
+}
+
+.call-to-action h2 {
+	color: #2b9dff;
+	font-size: 5vh;
+}
+
+.call-to-action-button {
+	padding: 10px 20px 10px 20px;
+	background-color: #2b9dff;
+	color: white;
+	border-radius: 1.5px;
+	font-size: 3vh;
+}
+
+.call-to-action-button:hover {
+	color: rgb(118, 191, 255);
+}
+
+.call-to-action h2,
+.call-to-action-button {
+	display: inline-block;
+	margin: 0 60px;
+	vertical-align: middle;
+}
+
+footer {
+	margin: 0 5vh 30px 5vh;
+}
+
+footer p,
+.footer-links {
+	display: inline-block;
+}
+
+.footer-links {
+	float: right;
+}
+
+.footer-links a {
+	margin-left: 20px;
+}
+
+.footer-links a:hover {
+	text-decoration: underline black;
+}
+
+@media only screen and (max-width: 1000px) {
+	header {
+		background-repeat: no-repeat;
+		background-size: 980px 720px;
+		background-position: top-right;
+	}
+
+	header h1 {
+		font-size: 5vh;
+		width: 40%;
+		color: #2b9dff;
+		vertical-align: middle;
+	}
+
+	.header-nav {
+		height: 20vh;
+	}
+
+	.team-members-area {
+		height: 80vh;
+	}
+	
+	.team-headline {
+		padding: 0;
+		margin: 0 20% 30px 20%;
+		font-size: 3.5vh;
+	}	
+
+	.about-container {
+		background-size: 800px 600px;
+	}
+
+	.about-headline,
+	.about-icon-container {
+		margin-left: 50%;
+		font-size: 3vh;
+	}
+
+	.call-to-action {
+		padding: 0;
+		height: 30vh;
+	}
+
+	.call-to-action-button {
+		margin-top: 20px;
+	}
+
+	.call-to-action h2,
+	.call-to-action-button {
+		display: block;
+	}
+}
+
+@media only screen and (max-width: 770px) {
+	header {
+		height: 200vh;
+		background-image: url(./images/mobile_background_header.png);
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: 60px 200px;
+		}
+
+	header h1 {
+		font-size: 5vh;
+		width: 100%;
+	}
+
+	.team-members-area {
+		height: 80vh;
+	}
+	
+	.team-headline {
+		padding: 0;
+		margin: 0 20% 30px 20%;
+		font-size: 3.5vh;
+	}	
+
+	.team-members-container {
+		width: 100%;
+		margin: 0 5vh 0 5vh;
+	}
+	.member-1 {
+		float: left;
+	}
+	
+	.member-2 {
+		float: left;
+		margin-left: 5px;
+	}
+	
+	.member-3 {
+		float: left;
+		margin-left: 5px;
+	}
+
+	.about-container {
+		height: 135vh;
+		background-size: 800px 600px;
+		background-position: 0 400px;
+	}
+
+	.about-headline {
+		text-align: center;
+		vertical align: middle;
+	}
+
+	.about-icon-container {
+		text-align: center;
+	}
+
+	.about-headline,
+	.about-icon-container {
+		margin: 0 5vh 0 5vh;
+		font-size: 3vh;
+	}
+
+	.call-to-action {
+		width: 100%;
+		padding: 0;
+		height: 30vh;
+		text-align: center;
+	}
+
+	.call-to-action-button {
+		margin-top: 20px;
+	}
+
+	.call-to-action h2 {
+		width: 100%;
+		text-align: center;
+		margin: 0 5vh 0 5vh;
+	}
+
+	footer {
+		text-align: center;
+		margin: 0 5vh 30px 5vh;
+	}
+	
+	footer p,
+	.footer-links {
+		margin-top: 10px;
+		display: inline-block;
+	}
+	
+	.footer-links {
+		text-align: center;
+	}
+	
+	.footer-links a {
+		margin-left: 20px;
+	}
+}
+
